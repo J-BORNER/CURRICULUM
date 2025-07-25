@@ -1,0 +1,35 @@
+<div class="experience-container">
+  <!-- Loading State -->
+  <div *ngIf="loading" class="loading-spinner">
+    <p>Loading experience...</p>
+  </div>
+
+  <!-- Error State -->
+  <div *ngIf="error" class="error-message">
+    <p>Error loading experience data</p>
+  </div>
+
+  <!-- Success State -->
+  <div *ngIf="cvData && !loading">
+    <section class="experience-section">
+      <div class="section-header">
+        <div class="star-effect">💼</div>
+        <h2 class="glowing-title">Experiencia Profesional</h2>
+        <div class="star-effect">💼</div>
+      </div>
+
+      <div class="timeline">
+        <div *ngFor="let exp of cvData.experiencia; let i = index" class="timeline-item" [style.--i]="i">
+          <div class="timeline-content">
+            <div class="exp-icon">🚀</div>
+            <h3 class="exp-position">{{ exp.puesto }}</h3>
+            <div class="exp-company">{{ exp.empresa }}</div>
+            <div class="exp-period">{{ exp.periodo }}</div>
+            <p class="exp-description">{{ exp.descripcion }}</p>
+            <div class="timeline-connector"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

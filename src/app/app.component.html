@@ -1,0 +1,18 @@
+<!-- Spinner Bootstrap (centrado) -->
+<div *ngIf="loading" class="modern-spinner">
+  <div class="spinner-core"></div>
+  <div class="spinner-aura"></div>
+  <span class="spinner-text">LOADING...</span>
+</div>
+
+<div class="app-container">
+  <div class="sidebar-area">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="content-area">
+    <header></header>
+    <main class="main-content">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>

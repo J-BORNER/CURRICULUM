@@ -1,0 +1,13 @@
+name: code deploy
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+    - name: Install packages
+      run: npm ci
+    - name: Bundle
+      run: npm run build

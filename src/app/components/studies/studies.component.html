@@ -1,0 +1,35 @@
+<div class="studies-container">
+  <!-- Loading State -->
+  <div *ngIf="loading" class="loading-spinner">
+    <p>Loading education...</p>
+  </div>
+
+  <!-- Error State -->
+  <div *ngIf="error" class="error-message">
+    <p>Error loading education data</p>
+  </div>
+
+  <!-- Success State -->
+  <div *ngIf="cvData && !loading">
+    <section class="studies-section">
+      <div class="section-header">
+        <div class="star-effect">🎓</div>
+        <h2 class="glowing-title">Formación Académica</h2>
+        <div class="star-effect">🎓</div>
+      </div>
+
+      <div class="timeline">
+        <div *ngFor="let estudio of cvData.estudios; let i = index" class="timeline-item" [style.--i]="i">
+          <div class="timeline-content">
+            <div class="study-icon">📚</div>
+            <h3 class="study-title">{{ estudio.titulo }}</h3>
+            <div class="study-institution">{{ estudio.institucion }}</div>
+            <div class="study-period">{{ estudio.periodo }}</div>
+            <div class="study-description">{{ estudio.descripcion}}</div>
+            <div class="timeline-connector"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

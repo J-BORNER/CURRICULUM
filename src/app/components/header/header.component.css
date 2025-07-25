@@ -1,0 +1,84 @@
+/*.navbar {
+  position: fixed; /* Cambio clave aquí */
+/*  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  min-height: 60px;
+  background-color: #12121f !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  color: white !important;
+  z-index: 1030; /* Añadido para superposición */
+  /* Mantenemos todos tus estilos originales */
+/*}
+
+/* Añade esto al final de tu CSS para ajustar el contenido */
+/*body {
+  padding-top: 60px; /* Compensa la altura del navbar fijo */
+/*}*/
+
+.navbar {
+  position: relative;
+  height: 60px;
+  min-height: 60px;
+  background-color: #12121f !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  color: white !important; /* Texto blanco global */
+}
+
+
+/* Texto blanco para todos los elementos */
+.navbar-brand,
+.nav-link,
+.navbar-toggler-icon,
+.offcanvas-title,
+.dropdown-item {
+  color: white !important;
+
+}
+
+.offcanvas-header {
+  position: relative;
+  height: 60px;
+  min-height: 60px;
+  background-color: #11111e !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  color: white !important; /* Texto blanco global */
+}
+
+.offcanvas-body {
+  position: relative;
+  height: 60px;
+  min-height: 60px;
+  background-color: #11111e !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  color: white !important; /* Texto blanco global */
+}
+
+/* Icono del menú hamburguesa blanco */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Offcanvas estilo oscuro con texto blanco */
+.offcanvas {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+/* Hover effects */
+.nav-link:hover,
+.dropdown-item:hover {
+  color: #3b82f6 !important; /* Azul al hacer hover */
+}
+
+/* Botón de búsqueda */
+.btn-outline-success {
+  color: white !important;
+  border-color: white !important;
+}
+
+.btn-outline-success:hover {
+  background-color: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+}

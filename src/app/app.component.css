@@ -1,0 +1,141 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  margin: 0; /* Asegura no hay márgenes externos */
+  padding: 0; /* Elimina paddings predeterminados */
+}
+
+.sidebar-area {
+  width: 280px;
+  flex-shrink: 0;
+  background-color: #121212; /* Mismo color que tu sidebar */
+}
+
+/* Sidebar ajustado */
+app-sidebar {
+  height: 100vh;
+  display: block;
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina paddings */
+}
+
+/* Asegura que el header no cree espacio no deseado */
+app-header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina paddings */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  margin: 0; /* Elimina márgenes */
+}
+
+/* Reset de márgenes en elementos raíz */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar-area {
+    width: 100%;
+    height: auto;
+  }
+
+  app-sidebar {
+    height: auto;
+  }
+}
+
+/* Spinner global centrado y con overlay semi-transparente */
+.global-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* Opcional: Fondo oscuro durante la carga */
+.global-spinner::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9998;
+}
+
+/* Spinner Fullscreen */
+/* Spinner Moderno (Tema Oscuro) */
+.modern-spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 31, 0.9); /* Fondo oscuro semi-transparente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  backdrop-filter: blur(5px); /* Efecto de desenfoque moderno */
+}
+
+.spinner-core {
+  width: 60px;
+  height: 60px;
+  border: 4px solid rgba(59, 130, 246, 0.3); /* Azul claro transparente */
+  border-radius: 50%;
+  border-top-color: #3b82f6; /* Azul brillante */
+  animation: spin 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+.spinner-aura {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(59, 130, 246, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  animation: pulse 2s ease-out infinite;
+}
+
+.spinner-text {
+  margin-top: 20px;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+/* Animaciones */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.8); opacity: 0.7; }
+  100% { transform: scale(1.3); opacity: 0; }
+}

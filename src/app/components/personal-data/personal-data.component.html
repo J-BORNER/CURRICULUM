@@ -1,0 +1,39 @@
+
+ <!-- src/app/components/datos-personales/datos-personales.component.html -->
+<div class="cv-container">
+  <!-- Loading State -->
+  <div *ngIf="loading" class="loading-spinner">
+    <p>Loading your awesome CV...</p>
+  </div>
+
+  <!-- Error State -->
+  <div *ngIf="error" class="error-message">
+    <p>Oops! Couldn't load the data. Please try again later.</p>
+  </div>
+
+  <!-- Success State -->
+  <div *ngIf="cvData && !loading" class="cv-card">
+    <section class="personal-data-section">
+      <h2>👤 Datos Personales</h2>
+
+      <table class="cv-table">
+        <tbody>
+          <tr *ngFor="let item of cvData.datosPersonales | keyvalue">
+            <th>{{ item.key | titlecase }}:</th>
+            <td>{{ item.value }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Sección de Contactos -->
+    <section class="contact-section">
+      <h2>📱 Contactos</h2>
+      <ul>
+        <li *ngFor="let contacto of cvData.contactos">
+          <strong>{{ contacto.tipo }}: {{ contacto.valor }}</strong>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>

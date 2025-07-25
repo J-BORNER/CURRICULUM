@@ -1,0 +1,21 @@
+<div class="sidebar-container">
+  <div class="sidebar">
+    <div class="sidebar-background"></div>
+
+    <div class="profile-section">
+      <img class="circle-photo" src="assets/img/f0002101-86b4-4b56-a04b-35b528c394ab.jpg">
+      <h1>Curriculum Vitae</h1>
+      <h2>Brian Rocael Mendez Lima</h2>
+    </div>
+
+    <div class="social-links">
+      <div *ngFor="let social of socialNetworks" class="social-item">
+        <a [href]="social.link" target="_blank" rel="noopener noreferrer">
+          <i [class]="social.icon"></i>
+          <span>{{social.name}}</span>
+          <div class="hover-effect"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

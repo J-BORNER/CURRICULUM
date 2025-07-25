@@ -1,0 +1,78 @@
+<!-- Sección de Ofertas -->
+<section class="offer-section" *ngIf="!loading && !error">
+  <h3>📨 Envíame una Oferta de Trabajo</h3>
+
+  <form *ngIf="!formSubmitted" (ngSubmit)="onOfferSubmit()" class="offer-form">
+    <!-- Campos del formulario -->
+    <div class="form-group">
+      <input type="text" [(ngModel)]="offerForm.name" name="name" placeholder="Tu nombre completo" required>
+    </div>
+
+    <div class="form-group">
+      <input type="email" [(ngModel)]="offerForm.email" name="email" placeholder="Tu email profesional" required>
+    </div>
+
+    <div class="form-group">
+      <input type="text" [(ngModel)]="offerForm.company" name="company" placeholder="Empresa (opcional)">
+    </div>
+
+    <div class="form-group">
+      <textarea [(ngModel)]="offerForm.message" name="message"
+        placeholder="Describe la oferta: puesto, salario, beneficios, etc." required rows="5"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label class="file-label">
+        {{ offerForm.fileName || 'Seleccionar archivo (PDF/Word)' }}
+        <input id="fileInput" type="file" (change)="onFileChange($event)" accept=".pdf,.doc,.docx"
+          style="display: none;">
+      </label>
+      <small *ngIf="offerForm.file" class="file-size">
+        {{ (offerForm.file.size / 1024 / 1024).toFixed(2) }} MB
+      </small>
+    </div>
+
+    <button type="submit" class="submit-btn" [disabled]="isSending">
+      <span *ngIf="!isSending">Enviar Oferta</span>
+      <span *ngIf="isSending">Enviando <i class="pi pi-spinner pi-spin"></i></span>
+    </button>
+
+    <p class="error-message" *ngIf="formError">
+      {{ formError }}
+    </p>
+  </form>
+
+  <div *ngIf="formSubmitted" class="success-message">
+    <i class="pi pi-check-circle"></i>
+    ¡Gracias! Tu oferta ha sido enviada al correo de negocios...
+    <br>Te responderé en menos de 24 horas.
+  </div>
+</section>
+
+<!-- Sección de Contactos -->
+<section class="contact-section" *ngIf="!loading && !error">
+  <h3>📱 Mis Redes Profesionales</h3>
+  <div class="contact-list">
+    <a href="https://linkedin.com/in/brianmendez" target="_blank" class="contact-item">
+      <i class="pi pi-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://github.com/J-BORNER" target="_blank" class="contact-item">
+      <i class="pi pi-github"></i> GitHub
+    </a>
+    <a href="https://twitter.com/brianmendez" target="_blank" class="contact-item">
+      <i class="pi pi-twitter"></i> Twitter
+    </a>
+    <a href="https://www.youtube.com/@bryanmendez8046/posts" target="_blank" class="contact-item">
+      <i class="pi pi-youtube"></i> YouTube
+    </a>
+    <a href="https://instagram.com/brianmendez" target="_blank" class="contact-item">
+      <i class="pi pi-instagram"></i> Instagram
+    </a>
+    <a href="https://discord.com/brianmendez" target="_blank" class="contact-item">
+      <i class="pi pi-discord"></i> Discord
+    </a>
+    <a href="https://amazon.com/brianmendez" target="_blank" class="contact-item">
+      <i class="pi pi-amazon"></i> Amazon
+    </a>
+  </div>
+</section>

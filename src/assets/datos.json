@@ -1,0 +1,207 @@
+{
+  "datosPersonales": {
+    "nombre": "Brian Rocael Mendez Lima ",
+    "edad": 25,
+    "nacionalidad": "Guatemaltec@",
+    "correo": "bm930731@gmail.com",
+    "direccion": "Guatemala, Guatemala Villa Nueva",
+    "telefono": "+502 31638553 ó +502 37360531",
+    "acercaDe": "Desarrollador Full Stack con 5 años de experiencia en Angular, Java y PrimeNG."
+  },
+  "contactos": [
+    {
+      "tipo": "LinkedIn",
+      "valor": "linkedin.com/in/brianmendez"
+    },
+    {
+      "tipo": "GitHub",
+      "valor": "github.com/brianmendez"
+    },
+    {
+      "tipo": "Twitter",
+      "valor": "@brianmendez"
+    },
+    {
+      "tipo": "YouTube",
+      "valor": "@brianmendez"
+    }
+  ],
+  "experiencia": [
+    {
+      "puesto": "DESARROLLADOR FULLSTACK",
+      "empresa": "DevSU",
+      "periodo": "2024 - ACTUALIDAD",
+      "descripcion": "En esta yo me desempeñe como desarrollador fullstack para microservicios, manejando lo que son tecnologias como java, spring boot, angular, node.js, entre otras mas como boostrap y primeng, la cual lo implemente en varios proyectos asi como los microsevicios y desarrollo web, asi mismo tambien implemente varias tecnologias aparte de las principales de las cuales tengo conocimiento tambien hoy en dia, y puedo desempeñar como desarrollador de software tanto como backend y frontend entre otras mas que me considero bastante capas!"
+    },
+    {
+      "puesto": "PROGRAMADOR JUNIOR",
+      "empresa": "DevSU",
+      "periodo": "2023 - 2024",
+      "descripcion": "Sobre este empleo aprendi mucho sobre lo que son las bese de la programacion y modelos de negocios impelmentados en el desarrollo, asi mismo aporte tambien con el aquipo de developers ya que trabajamos como un team; las cuales aportamos las tecnologias a utilizar y los conocimientos y reuqerimientos que teniamos sobre de ellas en el modelo de negocio, uso de lo que son IDES, lenguajes de desarrollo, Frameworks, entre muchas mas."
+    },
+    {
+      "puesto": "EJECUTIVO DE LLAMADAS",
+      "empresa": "BANCO PROMERICA",
+      "periodo": "2024 - ACTUALIDAD",
+      "descripcion": "En este empleo pude sesempeñar varios cargos para lo que era la calidad de servicio al cliente y asi mismo manejo de varios sistemas bancarios de los cuales pude tambien obtener conocimientos sobre grillas de calidad, correspondiente a procesos de supervisor como el manejo de TcGlobal, CX, manejo de productos bancarios como lo uqe son tarjetas de credito, extra financiamientos, prestamos, seguros, entre muchos mas de las cuales pude desempeñar por el lapso de 1 año y 6 meses. En este tiempo desarrolle lo que son habilidades de trato con los clientes y saber exactamente a como es que ls clientes piensan y desean las cosas, y desarrolle habilidades asi mismo de venta entre muchas mas."
+    },
+    {
+      "puesto": "REPRESENTANTE DE SERVICIO AL CLIENTE / EJECUTIVO DE VENTAS",
+      "empresa": "BANCO INDUSTRIAL",
+      "periodo": "2021 - 2024",
+      "descripcion": "Este fue mi primer trabajo forma el cual tube muchas experiencias de las cuales principalmente fue el servicio al cliente y el inicio tambien de mi carrera universitaria, despues tube la opcion de poder crecer en este trabajo el cual fue como ejecutivo de ventas en el cual tube la oportunudad de poder saber sobre productos bancarios de principio a fin y poder aplicarlo a mi vida diaria y a mi trabajo, tube esa oportunidad de estar en esta area un lapso de 1 año pero en totalidad fue 3 años en dicha empresa las cuales fueron los principales!"
+    },
+    {
+      "puesto": "DISEÑADOR",
+      "empresa": "TALLERES MENDEZ",
+      "periodo": "2018 - 2020",
+      "descripcion": "Este trabajo fue un trabajo familiar,el cual fue un taller de estructuras en el cual yo era el encargado de poder diseñar lo que son las estructuras y multiples proyectos para clientes de los cules el taller disponia, tanto estructuras metaalicas que era lo principal del taller, asi mismo tambien tube la oportunidad de poder tener mi primer experiencia laboral para desempeñarme profecionalmente en mi futuros trabajos como lo estamos viendo anteriormente!"
+    }
+  ],
+  "habilidades": [
+    {
+      "nombre": "Angular",
+      "nivel": "Avanzado"
+    },
+    {
+      "nombre": "PrimeNG / PrimeFaces",
+      "nivel": "Intermedio"
+    },
+    {
+      "nombre": "JavaScript / TypeScript",
+      "nivel": "Avanzado"
+    },
+    {
+      "nombre": "Java (Spring Boot)",
+      "nivel": "Avanzado"
+    },
+    {
+      "nombre": "SQL",
+      "nivel": "Avanzado"
+    },
+    {
+      "nombre": "C++",
+      "nivel": "Avanzado"
+    },
+    {
+      "nombre": "IBM / DB2",
+      "nivel": "Avanzado"
+    },
+    {
+      "nombre": "HTML / CSS",
+      "nivel": "Intermedio"
+    },
+    {
+      "nombre": "React",
+      "nivel": "Intermedio"
+    },
+    {
+      "nombre": "Vue.js",
+      "nivel": "Intermedio"
+    },
+    {
+      "nombre": "Diseño de Interfaces",
+      "nivel": "Intermedio"
+    },
+    {
+      "nombre": "Diseño de Experiencia del Usuario",
+      "nivel": "Intermedio"
+    },
+    {
+      "nombre": "C#",
+      "nivel": "Avanzado"
+    },
+    {
+      "nombre": "Laravel",
+      "nivel": "Intermedio"
+    },
+    {
+      "nombre": "Boostrap",
+      "nivel": "Avanzado"
+    },
+    {
+      "nombre": "Oracle",
+      "nivel": "Avanzado"
+    },
+    {
+      "nombre": "Contenedores / Docker",
+      "nivel": "Intermedio"
+    },
+    {
+      "nombre": "Kubernetes",
+      "nivel": "Intermedio"
+    },
+    {
+      "nombre": "Servicio Heterogenio",
+      "nivel": "Avanzado"
+    },
+    {
+      "nombre": "Servicio de Microservicios",
+      "nivel": "Avanzado"
+    },
+    {
+      "nombre": "Visual Studio",
+      "nivel": "Avanzado"
+    },
+    {
+      "nombre": "Python",
+      "nivel": "Intermedio"
+    },
+    {
+      "nombre": "JWT",
+      "nivel": "Intermedio"
+    },
+    {
+      "nombre": "KALI",
+      "nivel": "Intermedio"
+    },
+    {
+      "nombre": "PARROT",
+      "nivel": "Intermedio"
+    },
+    {
+      "nombre": "UBUNTU",
+      "nivel": "Avanzado"
+    },
+    {
+      "nombre": "GENTOO",
+      "nivel": "Avanzado"
+    },
+    {
+      "nombre": "DEBIA",
+      "nivel": "Avanzado"
+    }
+  ],
+  "estudios": [
+    {
+      "titulo": "INGENIERIA EN SISTEMAS DE INFORMACION Y CIENCIAS DE LA COMPUTACION",
+      "institucion": "UNIVERSIDAD DE GUATEMALA MARIANO GALVEZ (CAMPUS VILLA NUEVA)",
+      "periodo": "2022 - 2025",
+      "descripcion": "Esta parte de mi vida la cual estoy curzando actualmente, tube varios retos el cual era el como empezar la carrera sin perder o frustrarme ya que los años que deje de estudiar fue cuando empezo la pandemia y se me dificulto ya que temas laborales y educativos se complicaron, ya en el 2022 empece a estudiar con el anelo de poder superarme y asi sucedio desde mi primer semestre yo tube buenos mentores los cuales me enseñaron de la mejor forma y me ayudaron a mejorar dia con dia. Los primeros semestres empezamos a ver la introduccion a mi carrea, luego el segundo y asi sucesivamente de los cuales aprendi demaciado hasta la actualidad; en este tiempo apreni sobre bases de datos; SERVICIO HETEROGENIO, IBM, DB2, SQL, ORACLE, CONTENEDORES, BASE DE DATOS RELACIONALES, BASES DE DATOS NO RELACIONES, NOSQL, CONFIGURACIONES SOBRE LAS BASES DE DATOS, MENEJOS DE IDES, CONEXIONES HETEROGENEAS, ENTRE MUCHAS COSAS MAS. Asi mismo aprendi lo que es el programas y usar la programacion como lo siguiente; MICROSERVICIOS, DESARROLLO WEB, MANEJO DE HERRAMIENTAS PROFECIONALES, MENJO DE IDES, VISUAL STUDIO CODE, JI, TYPESCRIPT, JAVASRCIPT, CSS, MENJO DE JAVA EN PROGRAMACION, C++, PYTHON, ENTORNOS DE PRUBEAS , AWS, JWT, ANGULAR, REACT, LARAVEL, BOORTRAP, PRIMENG, ENTRE MUCHAS MAS. y no solo eso he aprendido sino que tambien el manejode varios sistemas operativo, los cuales puedo utilizar hoy en dia, manejo de linux, la mayoria de entornos de linux como lo es; KALI, PARROT, UBUNTU, GENTOO, FREEBSD, DEBIA, PUPPY, ENTRE OTROS MAS. Esto es lo que he aprendido en el transcuros de mi carrera y he tenido proecto como este (MI Curriculum), y varios mas, eso es lo principal que he aprenindido ya que tambien me puedo desempeñar en varias areas relacionadas a mi carrera"
+    },
+    {
+      "titulo": "CURSO MICROSERVICIOS / UDEMY",
+      "institucion": "UDEMY",
+      "periodo": "2024 - 2024",
+      "descripcion": "En este curso pude mejorar mas mis conocimientos de como poder desempeñarme como un FULL STACK en lo que son los microservicios y asi mismo manejando las tecnologias necesarias para poder implementarlos."
+    },
+    {
+      "titulo": "BACHILLER EN COMPUTACION",
+      "institucion": "CENTRO DE EDUCACION PERSONALIZADO GUATE-AMALA (CEPAGUA)",
+      "periodo": "2017 - 2018",
+      "descripcion": "Sobre esta parte de mi vida entre mas a profundidad con mis anelos sobre el aprendizade de la tecnologia, ya tube mas conocimientos y catedraticos los cuales me apoyaron para poder desempeñar y asi mismo mejorar mis conocimientos, pero tambien tube lo que son dificultades ya que habian cosas de las cuales no entendia pero tube buenos mentores los cuales me ayudaron a entender las cosas, y gracias a eso tube conocimientos mejores desarrollados y tube idea de como empezar sobre la carrera de INGENIERIA EN SISTEMAS y asi mismo mejore dia con dia"
+    },
+    {
+      "titulo": "EDUCACION BASICA / SECUNDARIA",
+      "institucion": "CENTRO DE EDUCACION PERSONALIZADO GUATE-AMALA (CEPAGUA)",
+      "periodo": "2014 - 2016",
+      "descripcion": "En esta etapa de mi vida curse lo que son los grados superiores a primaria ya los basiscos é teniendo nuevos conocimientos sobre lo que se tenia al rededor de mi vida, asi mismo me empezo a gusta mas la tecnologia y mis anelos se empezaron a inclinar mas a lo que era la tecnologia desde lo tecnico a lo que era desarrollo de la misma, como los progrmas de programacion, compiladores de informacion, manejo de hardware, entre muchas mas!"
+    },
+    {
+      "titulo": "PRIMARIA",
+      "institucion": "ESCUELA OFICIAL RURAL MIXTA LA PAZ",
+      "periodo": "2006 - 2013",
+      "descripcion": "En esta etapa de mi vida curso loq ue viene siendo, el area primaria y comence en el mundo del estudio en el cual me apacione dia con dia del estudio y del aprendizaje, asi mismo empece a cursar los conocimientos des mi pre-primaria a sexto primaria"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+<div class="skills-container">
+  <!-- Loading State -->
+  <div *ngIf="loading" class="loading-spinner">
+    <p>Loading skills...</p>
+  </div>
+
+  <!-- Error State -->
+  <div *ngIf="error" class="error-message">
+    <p>Error loading skills data</p>
+  </div>
+
+  <!-- Success State -->
+  <div *ngIf="cvData && !loading">
+    <section class="skills-section">
+      <h2>💻 Technical Skills</h2>
+
+      <!-- Habilidades Avanzadas -->
+      <div class="skill-category">
+        <h3>🟢 Advanced Skills</h3>
+        <div class="skills-grid">
+          <ng-container *ngFor="let skill of cvData.habilidades; let i = index">
+            <div class="skill-card"
+                 *ngIf="skill.nivel === 'Avanzado'"
+                 [style.--i]="i">
+              <div class="skill-name">{{ skill.nombre }}</div>
+              <div class="skill-level advanced">{{ skill.nivel }}</div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+
+      <!-- Habilidades Intermedias -->
+      <div class="skill-category">
+        <h3>🟡 Intermediate Skills</h3>
+        <div class="skills-grid">
+          <ng-container *ngFor="let skill of cvData.habilidades; let i = index">
+            <div class="skill-card"
+                 *ngIf="skill.nivel === 'Intermedio'"
+                 [style.--i]="i">
+              <div class="skill-name">{{ skill.nombre }}</div>
+              <div class="skill-level intermediate">{{ skill.nivel }}</div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
