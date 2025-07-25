@@ -14,6 +14,11 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/curriculum-introducing",
+            "baseHref": "/",
+            "deployUrl": "/",
+            "optimization": true,
+            "aot": true,
+            "outputHashing": "all",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
