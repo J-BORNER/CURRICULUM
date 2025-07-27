@@ -1,9 +1,9 @@
 [build]
-  command = "npm run build -- --configuration=production"
-  publish = "dist/curriculum-introducing"
+# base = "no-ssr-form"
+  command = "ng build"
+  publish ="dist/curriculum-introducing/browser"
 
-[[redirects]]
-  from = "/*"
+  [[redirects]]
+  form = "/*"
   to = "/index.html"
   status = 200
-  force = true
