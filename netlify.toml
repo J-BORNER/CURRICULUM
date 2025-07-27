@@ -1,0 +1,9 @@
+[build]
+# base = "no-ssr-form"
+  command = "ng build"
+  publish ="dist/no-ssr-form/browser"
+
+  [[redirects]]
+  form = "/*"
+  to = "/index.html"
+  status = 200
