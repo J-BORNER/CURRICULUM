@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/curriculum-introducing/browser",
+            "outputPath": "dist/curriculum-introducing",
             "baseHref": "/",
             "deployUrl": "/",
             "optimization": true,
