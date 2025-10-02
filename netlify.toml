@@ -1,9 +1,8 @@
 [build]
-# base = "no-ssr-form"
   command = "ng build"
-  publish ="dist/curriculum-introducing/browser"
+  publish = "dist/curriculum-introducing/browser"
 
-  [[redirects]]
-  form = "/*"
+[[redirects]]
+  from = "/*"
   to = "/index.html"
   status = 200
