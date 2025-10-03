@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "builds": [
+  "buildCommand": "ng build",
+  "outputDirectory": "dist/curriculum-introducing/browser",
+  "routes": [
     {
-      "src": "dist/curriculum-introducing/browser/**/*",
-      "use": "@vercel/static"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
-  ],
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
