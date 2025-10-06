@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "buildCommand": "ng build --base-href ./",
+  "buildCommand": "ng build --configuration production --base-href ./",
   "outputDirectory": "dist/curriculum-introducing/browser",
   "routes": [
+    {
+      "src": "/(.*\\.(js|css|ico|png|jpg|jpeg|svg|woff|woff2|ttf|eot))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "/index.html"
